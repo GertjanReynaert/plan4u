@@ -1,0 +1,179 @@
+*, *:after, *:before
+{
+	margin: 0px;
+	padding: 0px;
+	font-family:verdana, geneva, sans-serif;
+	font-size: 16px;
+	
+	-webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+body
+{
+	background-color:#EDEDED;
+	overflow:hidden;
+	min-width:960px;
+	min-height:600px;
+}
+.nonselectable
+{
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	user-select: none;
+	cursor:default;
+}
+
+.button
+{
+	border: 1px solid #aaa;
+	border-bottom-color: #999;
+	border-top-color: #ddd;
+	border-radius: 20px !important;
+	
+	padding: 2px;
+	
+	background-color: #999;
+	text-align: center;
+	cursor:pointer;
+}
+
+
+/*globalhead*/
+header
+{
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	padding: 3px;
+	height: 45px;
+	min-width:960px;
+	width: 100%;
+	display: block;
+	z-index: 9900;
+	
+
+	/*color:#ff8c00;*/
+	color:#ffa940;
+	/*color:#ffc073;*/
+	
+	background-image: -webkit-gradient(linear,center top,center bottom,from(#c437d3),to(#62016d));
+	background-image: -moz-linear-gradient(center top,#c437d3 0%,#62016d 100%);
+	background-image: -o-linear-gradient(top,#c437d3,#62016d);
+}
+@import url(http://fonts.googleapis.com/css?family=Didact+Gothic);
+#planlogo
+{
+	overflow:hidden;
+	float:left;
+	margin-left:10px;
+	margin-top:5px;
+}
+#planlogoimage
+{
+	width:30px;
+	height:30px;
+	background-image:url(../../pictures/planlogo.jpg);
+	background-repeat:no-repeat;
+	background-size:cover;
+	border-radius:6px;
+	float:left;
+}
+#planlogoname
+{
+	float:left;
+	margin:6px 10px;;
+}
+#planlogoname p
+{
+	font-family: 'Didact Gothic', sans-serif !important;
+	font-size:20px;
+}
+
+/*headloggedin*/
+header>aside
+{
+	float: right;
+	cursor: pointer;
+}
+#login, #signup
+{
+	float: left;
+	padding: 10px;
+}
+#login
+{
+	margin-right: 10px;
+}
+#login:hover, #signup:hover 
+{
+	background-image: -webkit-gradient(linear,center top,center bottom,from(#62016d),to(#c437d3));
+	background-image: -moz-linear-gradient(center top,#62016d 0%,#c437d3  100%);
+	background-image: -o-linear-gradient(top,#62016d,#c437d3);
+	border-radius: 5px;
+	padding: 10px;
+	text-decoration: underline;
+}
+#wrapper
+{
+	position:absolute;
+	overflow: hidden;
+	width:100%;
+	height: 100%;
+	min-height:600px;
+	min-width:960px;
+	
+	
+}
+#slide
+{
+	width: 100%;
+	height: 100%;
+}
+#loginbox,#signupbox
+{
+	top: 45px; /*headerhoogte*/
+}
+#loginbox
+{
+	width: 300px;
+	height: 300px;
+	background: red;
+	float: right;
+	position: relative;
+	right:-350px; /*min de breedte van de signupbox*/
+}
+#signupbox
+{
+	position: relative;
+	left: 350px;
+
+	width: 350px;
+	height: 100%;
+	background: blue;
+	float: right;
+}
+
+#promotiongrid
+{
+	position: absolute;
+	top: 0px;
+
+	padding: 20px;
+	padding-right: 50px;
+	padding-top: 65px; /*header + padding*/
+	width: 100%;
+	height: 100%;
+}
+#promotionbox
+{
+	position: relative;
+	border:5px solid grey;
+	background: green;
+	float:right;
+
+	width: 30%;
+	height: 100%;
+}

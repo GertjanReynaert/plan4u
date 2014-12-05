@@ -1,0 +1,525 @@
+
+border-style/*complete achtergrond, achtergrond die achter alles staat */
+{
+	background-color:whitesmoke;
+}
+
+.button	/*kleuren van oa verzendknop in feedbackmenu*/
+{
+	border: 1px solid #aaa;
+	border-radius: 20px !important;
+	background-color: #999;
+	background-image: -webkit-gradient(linear,center top,center bottom,from(#e5e5e5),to(#9b9b9b));
+	background-image: -moz-linear-gradient(center top,#e5e5e5 0%,#9b9b9b 100%);
+	background-image: -o-linear-gradient(top,#e5e5e5,#9b9b9b);
+}
+
+header	/*bovenbalk, momenteel in blauw*/
+{
+	/*color:#ff8c00;*/
+	color:#ffa940;
+	/*color:#ffc073;*/
+	color: #c4e0e2;
+	/*originele gradient van #c437d3 naar #62016d*/
+	background-image: url(../pictures/hout.jpg);
+	/*background-size: 100%;*/
+	background-image: -moz-linear-gradient(center top,#597FA2 0%,#233A50 100%);
+	background-image: -o-linear-gradient(top,#597FA2,#233A50);
+}
+@import url(http://fonts.googleapis.com/css?family=Didact+Gothic);
+#planlogo 	/*omhulsel van figuur en naam*/
+{
+
+}
+#planlogoimage	/*figuur*/
+{
+	background-image:url(../pictures/planlogo.jpg);
+	background-repeat:no-repeat;
+	background-size:cover;
+	border-radius:6px;
+	border:2px solid whitesmoke;
+	 
+}
+#planlogoname	/*omhulsel van de naam*/
+{
+
+}
+#planlogoname p 	/*tekst zelf*/
+{
+
+}
+
+header>aside	/*omhulsel van account*/
+{
+
+}
+header>aside:hover	/* effect als je erover gaat met muis*/
+{
+	background-image: -webkit-gradient(linear,center top,center bottom,from(#2CC2E8),to(#16a5ca));
+	background-image: -moz-linear-gradient(center top,#2CC2E8 0%,#16a5ca 100%);
+	background-image: -o-linear-gradient(top,#2CC2E8,#16a5ca);
+	border-radius: 5px;
+}
+aside img 	/*accountfiguur*/
+{
+	border-radius: 5px;
+}
+
+
+#accountname	/* accountnaam in bovenbalk*/
+{
+	
+}
+#accountsettings	/*dropdown menu als je op account klikt*/
+{
+	background-color:#ededed;
+
+	border:5px solid #233A50;
+	border-top:none;
+}
+#accountsettings img 	/*foto in dropdown menu*/
+{
+	 
+}
+#accountdrop
+{
+
+}
+#accountdrop p 	/*tekst in dropdown*/
+{
+	
+}
+
+#feedbacklabel
+{
+	background-color:rgba(160, 160, 164, 0.58);
+	border: 1px solid #808080;
+	border-top:none;
+	border-bottom-right-radius:5px;
+	border-bottom-left-radius:5px;
+}
+
+
+#feedbacklabel p
+{
+
+}
+#feedbackbox
+{
+	background-color: #f2f2f2;
+	border: 3px solid #999;
+	border-radius: 10px;
+}
+#feedbackbox:before
+{
+	border-bottom: 	13px 	solid 	#999;
+	border-left: 	8px 	solid 	transparent;
+	border-right: 	8px 	solid 	transparent;
+}
+#feedbackbox:after
+{
+	border-bottom: 	10px 	solid 	#f2f2f2;
+	border-left: 	5px 	solid 	transparent;
+	border-right: 	5px 	solid 	transparent;
+}
+#feedbackcontent
+{
+	background-color: white;
+	border: 1px solid #fff;
+	border-radius: 7px;
+}
+#feedback textarea
+{
+
+}
+#feedback h3
+{
+
+}
+#verzendfeedback
+{
+	 
+}
+#wrapper
+{
+
+}
+
+#calendar, #todo
+{
+	border-radius:5px;
+}
+#calendar
+{
+	background-color: #ffc073;
+	background-image: -webkit-gradient(linear,center top,center bottom,from(#2CC2E8),to(#16a5ca));
+	background-image: -moz-linear-gradient(center top,#2CC2E8 0%,#16a5ca 100%);
+	background-image: -o-linear-gradient(top,#2CC2E8,#16a5ca);
+
+}
+#cornrightbottom	{	border-bottom-right-radius:	5px;	}
+#cornrighttop		{	border-top-right-radius:		5px;	}
+#cornlefttop		{	border-top-left-radius:			5px;	}
+#cornleftbottom	{	border-bottom-left-radius:		5px;	}
+#calendargrid
+{
+	 
+	 
+}
+#dayheader
+{
+
+}
+.head
+{
+	 
+	background:#ddd;
+	border:solid #999 1px;
+	border-left:0px;
+	border-bottom:solid 5px #999;
+	 
+}
+.left
+{
+	border-left:1px solid #999 !important;
+}
+
+.week
+{
+
+}
+.dag
+{
+	border:1px solid #999;
+	background:#eee;
+	border-left: none;
+	border-top:none;
+}
+.verticalbar
+{
+	border-right:5px solid #999;
+}
+.dagnummer 
+{
+	border-right: 1px solid #999;
+	border-bottom: 1px solid #999;
+	border-bottom-right-radius: 10px;
+	background-color: #c5c5c5;
+}
+
+#todo
+{
+	background-color: #0969A2;
+	background-image: -webkit-gradient(linear,center top,center bottom,from(#2CC2E8),to(#16a5ca));
+	background-image: -moz-linear-gradient(center top,#0099ff 0%,#64A8D1 100%);
+	background-image: -o-linear-gradient(top,#0099ff,#64A8D1);
+}
+#nav
+{
+	border-radius: 5px;
+}
+#nav>nav>div
+{
+	 border-right: 1px solid black;
+}
+#nav>nav>div:last-child
+{
+	border-right: none;
+}
+#todo>nav>p
+{
+
+	color:#ffa940;
+}
+#planbutton, #print, #agbuttonnew
+{
+	background-image: -webkit-gradient(linear,center top,center bottom,from(#e5e5e5),to(#9b9b9b));
+	background-image: -moz-linear-gradient(center top,#e5e5e5 0%,#9b9b9b 100%);
+	background-image: -o-linear-gradient(top,#e5e5e5,#9b9b9b);
+}
+#planbutton:hover, #print:hover, #agbuttonnew:hover
+{
+	background-image: -webkit-gradient(linear,center top,center bottom,from(#9b9b9b),to(#e5e5e5));
+	background-image: -moz-linear-gradient(center top,#9b9b9b 0%,#e5e5e5  100%);
+	background-image: -o-linear-gradient(top,#9b9b9b,#e5e5e5);
+}
+#planbutton p
+{
+
+}
+#print
+{
+}
+#planbutton
+{
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+}
+#agbuttonnew
+{
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+}
+#td_print_pop
+{
+	
+}
+#td_print_box
+{
+	border:5px solid black;
+	border-radius:5px;
+	background-color: #eee;
+}
+#td_print_box>nav
+{
+
+}
+#td_print_box>nav>div
+{
+
+}
+.printchoice
+{
+	background-color: #c5c5c5;
+}
+#paperstack_month,#paperstack_week, #print_msgbox
+{
+	background: #c5c5c5;
+}
+
+.paperchoice
+{
+	
+}
+#paperstack_month>.paperchoice
+{
+	
+}
+#paperstack_week>.paperchoice
+{
+}
+.paper
+{
+	background-color: white;
+	 
+	border:1px solid grey;
+}
+.paper:before
+{
+	background-color: white;
+	border:1px solid grey;
+}
+.paper>p
+{
+
+}
+.printpaper
+{
+
+}
+.printpaper>p
+{
+
+}
+
+#agendas
+{
+
+}
+.agenda
+{
+	border:5px solid black;
+	border-radius:5px;
+}
+.agenda:nth-child(even)
+{
+	background-color: #999;
+}
+.agenda:nth-child(odd)
+{
+	background-color: lightgrey;
+}
+.red .agendaheader		{	background-color: #ED3337;	}
+.orange .agendaheader	{	background-color: #FF9c00;	}
+.yellow .agendaheader	{	background-color: #FFFF40;	}
+.green .agendaheader	{	background-color: #80EE40;	}
+.blue .agendaheader		{	background-color: #3FDBF8;	}
+.red
+{
+	/*background-color:#FFC4BB !important;*/
+	background-color:#ED3337;
+}
+.blue
+{
+	/*background-color:#DDE9FF !important;*/
+	background-color:#3FDBF8;
+}
+.green
+{
+	background-color:#BADA55;
+	/*background-color:#E1FFE2 !important;*/
+}
+.yellow
+{
+	/*background-color:#FFFCC4 !important;*/
+	background-color:#FFFF40;
+}
+.orange
+{
+	/*background-color:#FFE2A8 !important;*/
+	background-color:#FF9c00;
+}
+.agendaheader
+{
+	border-bottom:5px solid black;
+	background-color: rgba(0,0,0,0.2);
+}
+.agendatitel
+{
+
+}
+.addnote
+{
+	border-left: 5px solid black;
+}
+.addnote p
+{
+
+}
+
+.note
+{
+	border-bottom:1px solid #999;
+}
+
+
+
+.plansign
+{
+	color: black;
+}
+
+
+.deletenote
+{
+	color: #C10000;
+}
+.deletenote:hover
+{
+	color:#550000;
+}
+
+/*popup*/
+#blanket {
+background-color:#111;
+opacity: 0.65;
+filter:alpha(opacity=65);
+}
+
+.popbox
+{
+border-radius:10px;
+background-color:white;
+}
+
+
+#newagendatitle, #setupagendatitle
+{
+	border-radius:7px;
+}
+#colorpicker
+{
+	 
+}
+.colorpick
+{
+
+	border-radius:7px;
+}
+.colorpick:hover
+{
+
+}
+.colorpick>.selected, .colorpick>.selected:hover
+{
+	 
+	 
+	border:5px solid rgba(0,0,0,0.2);
+	border-radius:7px;
+}
+
+.colorpick>.selected>p
+{
+
+}
+#agendaborders>nav
+{
+	 
+	 
+}
+#agendaborders nav p
+{
+	color:grey;
+	border-top-right-radius:7px;
+	border-top-left-radius:7px;
+}
+#agendaborders .borderchoice
+{
+	color:black;
+	background-color:#ededed;
+}
+#borderbox
+{
+	background-color:#ededed;
+	border-radius:7px;
+}
+
+#hourbox
+{
+	background-color: white;
+}
+.before
+{
+	background-color:blue;
+}
+.before:after
+{
+	border-top: 5px blue;
+	border-bottom: 5px transparent;
+	border-left: 5px transparent;
+	border-right: 5px transparent;
+	border-style: solid;
+}
+.after
+{
+	background-color:red;
+}
+.after:after
+{
+	border-top: 5px transparent;
+	border-bottom: 5px red;
+	border-left: 5px transparent;
+	border-right: 5px transparent;
+	border-style: solid;
+}
+.after>p, .before>p
+{
+	background-color:white;
+}
+.borderhour
+{
+	background:url(../pictures/hourborder.png) repeat-y;
+
+}
+.borderhour p
+{
+	background-color:white;
+}
+#submitnewagenda, #confirmagendasetup, #deleteagenda
+{
+
+}
+#deleteagenda
+{
+
+}

@@ -1,0 +1,839 @@
+*, *:after, *:before
+{
+	margin: 0px;
+	padding: 0px;
+	font-family:verdana, geneva, sans-serif;
+	font-size: 16px;
+	
+	-webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+div::-webkit-scrollbar
+	{
+		height: 12px;
+		width: 8px;
+		/*background: #000 transparent;*/
+	}
+	div::-webkit-scrollbar-thumb
+	{
+		background: #393812 ;
+		-webkit-border-radius: 1ex;
+		/*-webkit-box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.75);*/
+	}
+	div::-webkit-scrollbar-corner
+	{
+		background-color: transparent;
+	}
+body
+{
+	overflow:auto;
+	min-width:960px;
+	min-height:600px;
+}
+
+.button
+{
+	border: 1px solid #aaa;
+	border-bottom-color: #999;
+	border-top-color: #ddd;
+	border-radius: 20px !important;
+	
+	padding: 2px;
+	text-align: center;
+	cursor:pointer;
+}
+
+
+/*globalhead*/
+header
+{
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	padding: 3px;
+	height: 45px;
+	min-width:960px;
+	width: 100%;
+	display: block;
+	z-index: 9900;
+}
+@import url(http://fonts.googleapis.com/css?family=Didact+Gothic);
+#planlogo
+{
+	overflow:hidden;
+	float:left;
+	margin-left:10px;
+	margin-top:5px;
+}
+#planlogoimage
+{
+	width:30px;
+	height:30px;
+	background-image:url(../pictures/planlogo.jpg);
+	background-repeat:no-repeat;
+	background-size:cover;
+	border-radius:6px;
+	float:left;
+}
+#planlogoname
+{
+	float:left;
+	margin:6px 10px;;
+}
+#planlogoname p
+{
+	font-family: 'Didact Gothic', sans-serif !important;
+	font-size:20px;
+}
+
+/*headloggedin*/
+header>aside
+{
+	float: right;
+	padding-right: 10px;
+	padding-left: 5px;
+	padding-top: 5px;
+	cursor: pointer;
+}
+header>aside:hover
+{
+	background-image: -webkit-gradient(linear,center top,center bottom,from(#233A50),to(#597FA2));
+	background-image: -moz-linear-gradient(center top,#233A50 0%,#597FA2  100%);
+	background-image: -o-linear-gradient(top,#233A50,#597FA2);
+	border-radius: 5px;
+}
+aside img
+{
+	height: 28px;
+	width: 28px;
+	-webkit-border-radius:5px;
+	-moz-border-radius:5px;
+	margin-left: 10px;
+}
+
+#accountfoto, #accountname, #accountsettings, .login
+{float:left;}
+#accountname
+{
+	margin-top: 5px;
+}
+#accountsettings
+{
+	float:right;
+	position:absolute;
+	top:45px;/*header height*/
+	right:10px;
+	width:auto;
+	height:65px;
+	border:5px solid #233A50;
+	border-top:none;
+	padding:5px;
+}
+#accountsettings img
+{
+	float:left;
+}
+#accountdrop
+{
+	float:right;
+	margin:5px;
+}
+#accountdrop>p
+{
+	cursor:pointer;
+}
+#accountdrop>a
+{
+	 color:#ffa940;
+	 text-decoration:none;
+}
+#accountdrop>a>p
+{
+	 margin-top:7px;
+}
+
+
+
+/*feedback*/
+#feedback 
+{
+	position: fixed;
+	overflow: hidden;
+	top: 45px;/*header height*/
+	left: 35px;
+	z-index: 5000;
+}
+#feedbacklabel
+{
+	height: 25px;
+	width: 100px;
+	z-index: 5000;
+	
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-bottom: 2px;
+	padding-top: 2px;
+	
+	background-color:rgba(160, 160, 164, 0.58);
+	border: 1px solid #808080;
+	border-top:none;
+	border-bottom-right-radius:5px;
+	border-bottom-left-radius:5px;
+}
+
+
+#feedbacklabel p
+{
+	text-align: center;
+	text-decoration: underline;
+	cursor: pointer;
+}
+#feedbackbox
+{
+	position: relative;
+	width: 400px;
+	height: 200px;
+	margin-top: 10px;
+	padding: 10px;
+	z-index: 5000;
+
+	background-color: #f2f2f2;
+	border: 3px solid #999;
+	border-radius: 10px;
+}
+#feedbackbox:before
+{
+	content: "";
+	display: block;
+	position: relative;
+	width: 0px;
+	top:-25px;
+
+	border-bottom: 	13px 	solid 	#999;
+	border-left: 	8px 	solid 	transparent;
+	border-right: 	8px 	solid 	transparent;
+
+	margin-bottom: -13px;
+}
+#feedbackbox:after
+{
+	content: "";
+	display: block;
+	position: relative;
+	width: 0px;
+	top:-198px;
+	left: 3px;
+
+	border-bottom: 	10px 	solid 	#f2f2f2;
+	border-left: 	5px 	solid 	transparent;
+	border-right: 	5px 	solid 	transparent;
+}
+#feedbackcontent
+{
+	background-color: white;
+	border: 1px solid #fff;
+	border-radius: 7px;
+	
+	padding: 10px;
+	height: 178px;
+}
+#feedback textarea
+{
+	overflow:auto;
+	resize:none;
+	width: 100%;
+	height: 115px;
+}
+#feedback h3
+{
+	margin-bottom: 10px;
+}
+#verzendfeedback
+{
+	float: right;
+}
+#wrapper
+{
+	position:absolute;
+	
+	width:100%;
+	height: 100%;
+	min-height:600px;
+	min-width:960px;
+	
+	
+}
+.grid
+{
+	padding:10px;
+}
+.grid:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.col
+{
+	height:100%;
+	float:left;
+	padding-top:70px; /*header + feedbacklabel*/
+}
+.col-7-10
+{
+	width:70%;
+	padding-right: 10px;
+}
+.col-3-10
+{
+	width:30%;
+	padding-right:0px;
+}
+#calendar, #todo
+{
+	float:left;
+	position:relative;
+	height:100%;
+	width:100%;
+	padding:10px;
+	border-radius:5px;
+}
+#calendar
+{
+
+}
+#calendargrid
+{
+	width:100%;
+	height:100%;
+}
+#dayheader
+{
+	height:5%;
+}
+.head
+{
+	float:left;
+	width:14.2857142857142%;
+	min-height:25px;
+	height:100%;
+	
+	text-align:center;
+}
+.left
+{
+
+}
+
+#weken
+{
+	height:95%;
+}
+.week
+{
+	clear:both;
+	height:25%;
+}
+.dag
+{
+	position:relative;
+	float:left;
+	height:100%;
+	width:14.285714285714285714285714285714%;
+
+}
+
+.dagnummer 
+{
+
+	width: 30px;
+	text-align:center;
+}
+
+#todo
+{
+
+}
+#nav
+{
+	width:100%;
+	height:7%;
+	padding-bottom:10px;
+	border-radius: 5px;
+	
+}
+#nav>nav
+{
+	height:100%;
+}
+#todo>nav>p
+{
+	padding-top:10px;
+	
+	color:#ffa940;
+}
+#planbutton, #print, #agbuttonnew
+{
+	width:33.33%;
+	height: 100%;
+	min-height: 40px;
+	float: left;
+	
+}
+#planbutton:hover, #print:hover, #agbuttonnew:hover
+{
+	}
+#planbutton p
+{
+	width: 100%;
+	text-align: center;
+}
+#print
+{
+	padding-top: 5px;
+}
+#planbutton
+{
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+}
+#agbuttonnew
+{
+
+	padding-top: 7px;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+}
+#td_print_pop
+{
+	width: 100%;
+	height: 25%;
+	padding:10px 5px;
+	padding-top: 0px;
+}
+#td_print_box
+{
+	width: 100%;
+	height: 100%;
+}
+#td_print_box>nav
+{
+	width: 100%;
+	height: 15%;
+	overflow: hidden;
+	text-align: center;
+}
+#td_print_box>nav>div
+{
+	float: left;
+	width: 33.33%;
+	height: 100%;
+	cursor: pointer;
+}
+.printchoice
+{
+
+}
+#paperstack_month,#paperstack_week, #print_msgbox
+{
+	width:100%;
+	height:85%;
+	padding:10px;
+}
+
+.paperchoice
+{
+	float: left;
+	height:100%;
+	padding-right: 5px;
+}
+#paperstack_month>.paperchoice
+{
+	width: 50%;
+}
+#paperstack_week>.paperchoice
+{
+	width: 33.33%;
+}
+.paper
+{
+	margin-left: auto;
+	margin-right: auto;
+	width:60%;
+	height: 90%;
+	text-align: center;
+}
+.paper:before
+{
+	content: "";
+	display: block;
+	position: relative;
+
+	top:100%;
+	left:5%;
+
+	width:90%;
+	height: 5%;
+}
+.paper>p
+{
+	width: 100%;
+	height: 100%;
+}
+.printpaper
+{
+	position: relative;
+	text-align: right;
+	top:-35px;
+	right: 10px;
+}
+.printpaper>p
+{
+	font-size: 20px;
+}
+
+
+#agendas
+{
+	width:100%;
+	height:93%;
+	padding:0px 5px;
+	overflow:auto;
+}
+.agenda
+{
+	width:100%;
+	min-height:200px;
+	margin-bottom:10px;
+}
+.agenda:last-child
+{
+	margin-bottom:0px;
+}
+
+.agendaheader
+{
+	width:100%;
+	height:30px;
+}
+.agendasettings
+{
+	float:left;
+	margin-left:8px;
+}
+.agendasettings>img
+{
+	height:25px;
+	width:25px;
+}
+.agendasettings>img:hover
+{
+	margin:1px;
+	height:23px;
+	width:23px;
+}
+.agendatitel
+{
+	padding: 2px;
+	padding-left: 5px;
+	float: left;
+}
+.addnote
+{
+	float: right;
+	height:inherit;
+	cursor:pointer;
+	padding-right:10px;
+	padding-left:10px;
+}
+.addnote p
+{
+	margin:2px;
+	
+}
+
+.note
+{
+	overflow:hidden;
+	margin: 5px 10px;
+	padding:5px;
+	padding-left:0px;
+	clear: both;
+}
+
+
+.notetitle
+{
+	float: left;
+	overflow: hidden;
+	width: 80%;
+}
+.notetitle p
+{
+	white-space: nowrap;
+	overflow:hidden;
+	text-overflow: ellipsis;
+	-o-text-overflow: ellipsis;
+}
+.plansign
+{
+	float: left;
+	font-weight: bold;
+	width: 5%;
+	min-width:10px;
+}
+.planned
+{
+	display: none;
+}
+.notplanned
+{
+	display: block;
+}
+.deletenote
+{
+	float: right;
+	color: #C10000;
+	font-weight: bold;
+	width: 5%;
+	min-width:10px;
+	cursor:pointer;
+}
+.deletenote:hover
+{
+	color:#550000;
+}
+
+/*popup*/
+#blanket {
+background-color:#111;
+opacity: 0.65;
+filter:alpha(opacity=65);
+position:absolute;
+z-index: 9990;
+top:0px;
+left:0px;
+width:100%;
+}
+#wrap h2
+{
+	margin:10px;
+}
+.popbox{
+position:absolute;
+border-radius:10px;
+background-color:white;
+z-index: 9999;
+padding: 10px;
+}
+#locker{
+position: relative;
+float:right;
+}
+#locker img
+{
+	width:25px;
+	height:25px;
+	border-radius:50%;
+}
+#locker img :hover
+{
+	width:23px;
+	height:23px;
+	margin:1px;
+}
+#newagendatitle, #setupagendatitle
+{
+	width:430px;
+	height:50px;
+	border-radius:7px;
+	padding:10px;
+	font-size:30px;
+}
+#colorpicker
+{
+	overflow:hidden;
+	width:100%;
+}
+.colorpick
+{
+	float:left;
+	margin:10px;
+	width:76px; /*480/5 = 96-20 = 76*/
+	height:80px;
+	border-radius:7px;
+}
+.colorpick:hover
+{
+	margin:11px;
+	width:74px;
+	height:78px;
+}
+.colorpick>.selected, .colorpick>.selected:hover
+{
+	width:100%;
+	height:100%;
+	border:5px solid rgba(0,0,0,0.2);
+	border-radius:7px;
+}
+
+.colorpick>.selected>p
+{
+	position:relative;
+	top:45px;
+	left:50px;
+	font-size:20px;
+}
+#agendaborders>nav
+{
+	width:100%;
+	text-align: center;
+}
+#agendaborders nav p
+{
+	float:left;
+	width: 33.33%;
+	color:grey;
+	padding: 5px 0px;
+	border-top-right-radius:7px;
+	border-top-left-radius:7px;
+	cursor:pointer;
+}
+#agendaborders nav :last-child
+{
+	padding-right:10px;
+	cursor:pointer;
+}
+#agendaborders nav :first-child
+{
+	padding-left:0px;
+	cursor:auto;
+}
+#agendaborders .borderchoice
+{
+	color:black;
+	background-color:#ededed;
+}
+#borderbox
+{
+	overflow:hidden;
+	clear:both;
+	background-color:#ededed;
+	border-radius:7px;
+}
+#borderbox, #oneborder
+{
+	width: 100%;
+	height:120px;
+}
+#hourbox
+{
+	background-color: white;
+	height: 80px;
+	width: 100%;
+	padding-left: 5px;
+}
+.before
+{
+	width:20px;
+	height:15px;
+	margin-bottom:5px;
+	position:relative;
+	left:177px;
+	background-color:blue;
+}
+.before:after
+{
+	content: "";
+	display: block;
+	width: 0px;
+	height: 0px;
+	position: relative;
+	left:5px;
+	border-top: 5px blue;
+	border-bottom: 5px transparent;
+	border-left: 5px transparent;
+	border-right: 5px transparent;
+	border-style: solid;
+}
+.after
+{
+	width:20px;
+	height:15px;
+	position:relative;
+	left:329px;
+	top:5px;
+	background-color:red;
+	
+	cursor:pointer;
+}
+.after:after
+{
+	content: "";
+	display: block;
+	width: 0px;
+	height: 0px;
+	position: relative;
+
+	top:-24px;
+	left:5px;
+	border-top: 5px transparent;
+	border-bottom: 5px red;
+	border-left: 5px transparent;
+	border-right: 5px transparent;
+	border-style: solid;
+	
+}
+.after>p, .before>p
+{
+	position:relative;
+	font-size:10px;
+	background-color:white;
+	text-align:center;
+	top:2px;
+	margin-bottom:2px;
+	margin-left:2px;
+	margin-right:2px;
+}
+.borderhour
+{
+	display:inline-block;
+	position:relative;
+	height:80px;
+	width:18px;
+	float:left;
+	background:url(../pictures/hourborder.png) repeat-y;
+
+}
+.borderhour p
+{
+	position: relative;
+	font-size:10px;
+	text-align:center;
+	
+	margin-top:34px;
+	margin-bottom:34px;
+
+	background-color:white;
+}
+#submitnewagenda, #confirmagendasetup, #deleteagenda
+{
+	float: right;
+	width: 80px;
+	text-align: center;
+	margin-top: 10px;
+}
+#deleteagenda
+{
+	float:left !important;
+	width: 80px;
+}
+.nonselectable
+{
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	user-select: none;
+	cursor:default;
+}

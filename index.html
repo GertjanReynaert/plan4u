@@ -1,0 +1,222 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="format-detection" content="telephone=no"/>
+		<title>Plan 4u | Welcome</title>
+		<!--<link rel="icon" type="image/x-icon" href="pictures/favicon2.ico" />-->
+		<link href="css/style.css" rel="stylesheet" type="text/css"/>
+		<link href="css/icons.css" rel="stylesheet" type="text/css"/>
+		<link href="css/color.css" rel="stylesheet" type="text/css"/>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+		<script src="../jquery-1.7.2.min.js" ></script>
+		<script src="js/browserdetection.js" type="text/javascript"></script>
+		<!--de rest van de scripts wordt automatisch toegevoegd-->
+		<!--hier komt automatisch (na browserdetectie) alle css-->
+	</head>
+	<body>
+		<header>
+			<div id="planlogo">
+				<div id="planlogoimage"></div>
+				<div id="planlogoname"><p>Plan 4U</p></div>
+			</div>
+			<aside>
+				<div id="accountname">
+					<h3>Gertjan Reynaert</h3>
+				</div>
+				<div id="accountfoto">
+					<img src="pictures/accPic.JPG" alt="accountfoto"/>
+				</div>
+			</aside>
+			<div id="accountsettings">
+					<img src="pictures/accPic.JPG" alt="accountfoto"/>
+					<div id="accountdrop">
+						<p>Accountsettings</p>
+						<a href="login.html"><p>Log out</p></a>
+					</div>
+				</div>
+		</header>
+		<div id="feedback">
+			<div id="feedbacklabel"><p>Feedback</p></div>
+			<div id="feedbackbox">
+				<div id="feedbackcontent">
+					<h3>Feedback</h3>
+					<form method="post">
+						<textarea placeholder="Geef hier jouw mening of suggesties over plan 4u!"></textarea>
+						<input type="button" value="Verzend" id="verzendfeedback" class="button"/>
+					</form>
+				</div>
+			</div>
+		</div>
+		<div id="wrapper" class="grid">
+				<div class="col-7-10 col">
+					<div id="calendar">
+						<div id="calendargrid">
+							<div id="dayheader">
+								<div class="head left nonselectable" id="cornlefttop">	<p>Maandag</p>		</div>
+								<div class="head nonselectable">									<p>Dinsdag</p>		</div>
+								<div class="head nonselectable">									<p>Woensdag</p>	</div>
+								<div class="head nonselectable">									<p>Donderdag</p>	</div>
+								<div class="head nonselectable verticalbar">					<p>Vrijdag</p>		</div>
+								<div class="head nonselectable">									<p>Zaterdag</p>	</div>
+								<div class="head nonselectable" id="cornrighttop">			<p>Zondag</p>		</div>
+							</div>
+							<div id="weken">
+								<div class="week">
+									<div class="dag left"><div class="dagnummer">						<p>16</p>							</div></div>
+									<div class="dag"><div class="dagnummer">								<p>17</p>							</div></div>
+									<div class="dag"><div class="dagnummer">								<p>18</p>							</div></div>
+									<div class="dag"><div class="dagnummer"> 								<p>19</p> 							</div></div>
+									<div class="dag verticalbar"><div class="dagnummer">				<p>20</p> 							</div></div>
+									<div class="dag"><div class="dagnummer"> 								<p>21</p> 							</div></div>
+									<div class="dag"><div class="dagnummer"> 								<p>22</p> 							</div></div>
+								</div><!--end week-->
+								<div class="week">
+									<div class="dag left"><div class="dagnummer"> 						<p>23</p> 							</div></div>
+									<div class="dag"><div class="dagnummer"> 								<p>24</p> 							</div></div>
+									<div class="dag"><div class="dagnummer"> 								<p>25</p> 							</div></div>
+									<div class="dag"><div class="dagnummer"> 								<p>26</p> 							</div></div>
+									<div class="dag verticalbar"><div class="dagnummer">				<p>27</p> 							</div></div>
+									<div class="dag"><div class="dagnummer"> 								<p>28</p> 							</div></div>
+									<div class="dag"><div class="dagnummer"> 								<p>29</p> 							</div></div>
+								</div><!--end week-->
+								<div class="week">
+									<div class="dag left"><div class="dagnummer"> 						<p>30</p> 							</div></div>
+									<div class="dag"><div class="dagnummer"> 								<p>31</p> 							</div></div>
+									<div class="dag"><div class="dagnummer"> 								<p>1</p> 							</div></div>
+									<div class="dag"><div class="dagnummer"> 								<p>2</p> 							</div></div>
+									<div class="dag verticalbar"><div class="dagnummer"> 				<p>3</p> 							</div></div>
+									<div class="dag"><div class="dagnummer"> 								<p>4</p> 							</div></div>
+									<div class="dag"><div class="dagnummer"> 								<p>5</p> 							</div></div>
+								</div><!--end week-->
+								<div class="week">
+									<div class="dag left" id="cornleftbottom"><div class="dagnummer"> 	<p>6</p> 							</div></div>
+									<div class="dag"><div class="dagnummer"> 										<p>7</p> 							</div></div>
+									<div class="dag"><div class="dagnummer"> 										<p>8</p> 							</div></div>
+									<div class="dag"><div class="dagnummer"> 										<p>9</p> 							</div></div>
+									<div class="dag verticalbar"><div class="dagnummer"> 						<p>10</p> 							</div></div>
+									<div class="dag"><div class="dagnummer">										<p>11</p>							</div></div>
+									<div class="dag" id="cornrightbottom"><div class="dagnummer"> 			<p>12</p> 							</div></div>
+								</div><!--end week-->
+							</div><!--end weken-->
+						</div><!--end calendargrid-->
+					</div><!--end calendar-->
+				</div><!--end col-7-10-->
+				<div class="col-3-10 col">
+					<div id="todo">
+						<div id="nav">
+							<nav>
+								<div id="planbutton">
+									<p>Plan</p>
+								</div>
+								<div id="print">
+									<!--<div id="printericon"></div>-->
+									<div class="icon-printer" style="font-size:20px;"></div>
+									<!--<span data-icon='"' aria-hidden="true"></span>-->
+								</div>
+								<div id="agbuttonnew">
+									<div id="agnewlist"></div>
+								</div>
+							</nav>
+						</div>
+						<div id="td_print_pop">
+							<div id="td_print_box">
+								<nav>
+									<div id="td_print_month" class="printchoice"><p>Month</p></div>
+									<div id="td_print_week" class=""><p>Week</p></div>
+									<div id="confirm_print"></p>Print</p></div>
+								</nav>
+								<div id="paperstack_month" >
+									<div class="paperchoice"><div class="paper" id="montha4"><p>A4</p></div></div>
+									<div class="paperchoice"><div class="paper" id="montha5"><p>A5</p></div></div>
+								</div>
+								<div id="paperstack_week" style="display:none;">
+									<div class="paperchoice"><div class="paper" id="weeka4"><p>A4</p></div></div>
+									<div class="paperchoice"><div class="paper" id="weeka5"><p>A5</p></div></div>
+									<div class="paperchoice"><div class="paper" id="weeka6"><p>A6</p></div></div>
+								</div>
+								<div id="print_msgbox" style="display:none;"></div>
+							</div>
+						</div>
+						<div id="agendas">
+							<div class="agenda red" id="ontspanning">
+								<div class="colorbar"></div>
+								<div class="agendaheader">
+									<div class="agendasettings">
+										<img src="pictures/gear.png" alt=""/>
+									</div>
+									<div class="agendatitel">
+										<p>Ontspanning</p>
+									</div>
+									<div class="addnote">
+										<p>+</p>
+									</div>
+								</div><!--end agendaheader-->
+									<div class="agendanotes">
+										<div class="note">
+											<div class="checkbox">
+												<div class="inactive">
+													<div class="bottomwing"></div>
+													<div class="wing"></div>
+												</div><!--end inactive-->
+											</div><!--end checkbox-->
+											<div class="notetitle"><p>Zwemmen</p></div>
+											<div class="plansign"><div class="notplanned"><p>N</p></div></div>
+											<div class="deletenote"><p>X</p></div>
+										</div><!--end note-->
+										<div class="note">
+											<div class="checkbox">
+												<div class="inactive">
+													<div class="bottomwing"></div>
+													<div class="wing"></div>
+												</div><!--end inactive-->
+											</div><!--end checkbox-->
+											<div class="notetitle"><p>Lopen</p></div>
+											<div class="plansign"><div class="notplanned"><p>N</p></div></div>
+											<div class="deletenote"><p>X</p></div>
+										</div><!--end note-->
+										<div class="note">
+											<div class="checkbox">
+												<div class="inactive">
+													<div class="bottomwing"></div>
+													<div class="wing"></div>
+												</div>
+											</div>
+											<div class="notetitle"><p>Dit is de bedoeling een nog langere test voor ellipsis te zijn</p></div>
+											<div class="plansign"><div class="notplanned"><p>N</p></div></div>
+											<div class="deletenote"><p>X</p></div>
+										</div>
+										<div class="note">
+											<div class="checkbox">
+												<div class="inactive">
+													<div class="bottomwing"></div>
+													<div class="wing"></div>
+												</div>
+											</div>
+											<div class="notetitle"><p>Testen of ellipsis wel werkt</p></div>
+											<div class="plansign"><div class="planned"><p>N</p></div></div>
+											<div class="deletenote"><p>X</p></div>
+										</div>
+									</div><!--end agendanotes-->
+							</div><!--end agenda-->
+							<div class="agenda orange" id="school"><div class="agendaheader"><div class="agendasettings"><img src="pictures/gear.png" alt=""/></div><div class="agendatitel"><p>School</p></div><div class="addnote"><p>+</p></div></div><!--end agendaheader--><div class="agendanotes"></div></div>
+							<div class="agenda yellow" id="sites"><div class="agendaheader"><div class="agendasettings"><img src="pictures/gear.png" alt=""/></div><div class="agendatitel"><p>sites</p></div><div class="addnote"><p>+</p></div></div><!--end agendaheader--><div class="agendanotes"></div></div>
+							<div class="agenda green" id="general"><div class="agendaheader"><div class="agendasettings"><img src="pictures/gear.png" alt=""/></div><div class="agendatitel"><p>general</p></div><div class="addnote"><p>+</p></div></div><!--end agendaheader--><div class="agendanotes"></div></div>
+							<div class="agenda blue" id="testje"><div class="agendaheader"><div class="agendasettings"><img src="pictures/gear.png" alt=""/></div><div class="agendatitel"><p>testje</p></div><div class="addnote"><p>+</p></div></div><!--end agendaheader--><div class="agendanotes"></div></div>
+
+						</div>
+					</div>
+				</div>
+		</div><!--end wrapper-->
+		<!--alle popup vensters-->
+		<div id="blanket" style="display:none;" ></div>
+		<div id="pops" class="popbox" style="display:none;">
+			<div id="locker">
+					<a href="#" onclick="popup('pops',0,0);popcontent('empty');"><p><img src="pictures/close.jpg" alt="close-button"/></p></a>
+				</div>
+				<div id="wrap">
+				</div>
+		</div>
+		<footer></footer>
+	</body>
+</html>
